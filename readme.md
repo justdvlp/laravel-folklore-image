@@ -87,12 +87,8 @@ This package also provides some common filters ready to use ([more on this](http
 #### Installation:
 
 **1-** Require the package via Composer in your `composer.json`.
-```json
-{
-	"require": {
-		"folklore/image": "0.3.*"
-	}
-}
+```
+composer require xenon/folklore-image-updated
 ```
 
 **2-** Run Composer to install or update the new requirement.
