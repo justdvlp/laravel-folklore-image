@@ -1,4 +1,4 @@
-<?php namespace Folklore\Image\Tests;
+<?php namespace Folklore\Image\tests;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Folklore\Image\Exception\FormatException;
@@ -14,7 +14,7 @@ class ImageTestCase extends TestCase
     public function setUp()
     {
         parent::setUp();
-        
+
         $this->image = $this->app['image'];
         $this->imageSize = getimagesize(public_path().$this->imagePath);
         $this->imageSmallSize = getimagesize(public_path().$this->imageSmallPath);
@@ -24,9 +24,9 @@ class ImageTestCase extends TestCase
     {
         $customPath = $this->app['path.public'].'/custom';
         $this->app['config']->set('image.write_path', $customPath);
-        
+
         $this->image->deleteManipulated($this->imagePath);
-        
+
         parent::tearDown();
     }
 
@@ -78,7 +78,7 @@ class ImageTestCase extends TestCase
 
         }
     }
-    
+
     /**
      * Define environment setup.
      *
