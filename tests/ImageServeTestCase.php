@@ -1,4 +1,4 @@
-<?php namespace Folklore\Image\Tests;
+<?php namespace Folklore\Image\tests;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Folklore\Image\Exception\FormatException;
